@@ -1,12 +1,8 @@
 package com.geekbrains.cloud.client;
 
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.Button;
-import javafx.scene.control.ListView;
 import javafx.scene.control.TextArea;
-import javafx.scene.control.TextField;
 import javafx.scene.layout.VBox;
 
 import java.net.URL;
@@ -18,23 +14,11 @@ public class Controller implements Initializable {
     TextArea textArea;
 
     @FXML
-    TextField msgField;
-
-    @FXML
-    ListView<String> dataList;
-
-    @FXML
     VBox root;
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
 
-    }
-
-    public void sendMsg(ActionEvent actionEvent) {
-        textArea.appendText(msgField.getText() + '\n');
-        msgField.clear();
-        msgField.requestFocus();
     }
 
 }
