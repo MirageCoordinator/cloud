@@ -28,11 +28,7 @@ public class Controller implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        String[] arr = {"A","B","C","D"};
-        dataList.getItems().addAll(arr);
 
-        Button btn = new Button("Hello");
-        root.getChildren().add(btn);
     }
 
     public void sendMsg(ActionEvent actionEvent) {
@@ -41,7 +37,4 @@ public class Controller implements Initializable {
         msgField.requestFocus();
     }
 
-    public void checkListViewElement(ActionEvent actionEvent) {
-        System.out.println(dataList.getSelectionModel().getSelectedItem());
-    }
 }

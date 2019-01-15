@@ -22,6 +22,5 @@
         <TextField fx:id="msgField" promptText="Введите сообщение" onAction="#sendMsg" HBox.hgrow="ALWAYS"/>
         <Button text="Отправить" onAction="#sendMsg"/>
     </HBox>
-    <ListView fx:id="dataList" maxHeight="100"/>
-    <Button text="Какой элемент выбран?" onAction="#checkListViewElement" />
+
 </VBox>
